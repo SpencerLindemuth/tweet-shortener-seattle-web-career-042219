@@ -28,7 +28,7 @@ end
 
 def word_substituter(tweet)
   hash = dictionary()
-  check = check.split(/\W+/)
+  check = tweet.split(/\W+/)
   check.each_with_index do |x, i|
     if hash.include?(x)
       tweet.gsub!(" #{x} ", " #{hash[x]} ")
