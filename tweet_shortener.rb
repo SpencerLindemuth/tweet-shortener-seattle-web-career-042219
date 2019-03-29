@@ -44,6 +44,14 @@ def bulk_tweet_shortener(tweets)
   end
 end
 
+def selective_tweet_shortener(tweet)
+  if tweet.length > 140
+    return word_substituter(tweet)
+  else
+    return tweet
+  end
+end
+    
 tww = "OMG you guys, you won't believe how sweet my kitten is. My kitten is like super cuddly and too cute to be believed right?"
 
 #binding.pry
