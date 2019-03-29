@@ -60,6 +60,7 @@ def shortened_tweet_truncator(tweet)
     if tweet.length > 140
       return tweet[0..139] + "..."
     end
+  end
 end
 
 tww = "OMG you guys, you won't believe how sweet my kitten is. My kitten is like super cuddly and too cute to be believed right?"
