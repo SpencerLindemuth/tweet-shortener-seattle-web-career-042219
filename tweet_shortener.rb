@@ -28,7 +28,6 @@ end
 
 def word_substituter(tweet)
   hash = dictionary()
-  check = tweet.downcase
   check = check.split(/\W+/)
   check.each_with_index do |x, i|
     if hash.include?(x)
