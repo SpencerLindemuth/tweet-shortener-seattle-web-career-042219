@@ -32,7 +32,6 @@ def word_substituter(tweet)
   check = tweet.downcase
   check = check.split(/\W+/)
   check.each_with_index do |x, i|
-    binding.pry
     if hash.include?(x)
       tweet.gsub!(" #{x} ", " #{hash[x]} ")
     end
